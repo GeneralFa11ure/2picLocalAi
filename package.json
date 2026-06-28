@@ -1,0 +1,14 @@
+{
+    "name": "2piclocalai",
+    "private": true,
+    "devDependencies": {
+        "@types/node": "^26.0.1",
+        "typescript": "^6.0.3"
+    },
+    "scripts": {
+        "typecheck:frontend": "tsc --project frontend/tsconfig.app.json --noEmit",
+        "typecheck:frontend:node": "tsc --project frontend/tsconfig.node.json --noEmit",
+        "typecheck:backend": "tsc --project backend/tsconfig.json --noEmit",
+        "typecheck": "npm run typecheck:frontend && npm run typecheck:frontend:node && npm run typecheck:backend"
+    }
+}
