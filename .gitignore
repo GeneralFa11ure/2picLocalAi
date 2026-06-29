@@ -8,7 +8,9 @@ dist/
 .env
 
 # IDE
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
 
 # Tests
 coverage/
