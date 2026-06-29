@@ -1,9 +1,9 @@
 /*
 {
-  "files": [],
-  "references": [
-    { "path": "./frontend" },
-    { "path": "./backend"  }
-  ]
+"files": [],
+"references": [
+{ "path": "./frontend" },
+{ "path": "./backend" }
+]
 }
 */

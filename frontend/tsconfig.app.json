@@ -3,21 +3,20 @@
  * It extends the base configuration and specifies compiler options for the frontend code.
  */
 {
-  "extends": "../tsconfig.base.json",
-  
-  "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "lib": ["ES2023", "DOM"],
-    "module": "esnext",
-    "types": ["vite/client"],
+    "extends": "../tsconfig.base.json",
 
+    "compilerOptions": {
+        "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+        "lib": ["ES2023", "DOM"],
+        "module": "esnext",
+        "types": ["vite/client"],
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": ["src"]
+        /* Bundler mode */
+        "moduleResolution": "bundler",
+        "verbatimModuleSyntax": true,
+        "moduleDetection": "force",
+        "noEmit": true,
+        "jsx": "react-jsx"
+    },
+    "include": ["src"]
 }
