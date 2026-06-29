@@ -3,6 +3,7 @@
     "private": true,
     "devDependencies": {
         "@types/node": "^26.0.1",
+        "oxlint": "^1.71.0",
         "prettier": "^3.9.3",
         "typescript": "^6.0.3"
     },
@@ -12,6 +13,10 @@
         "typecheck:backend": "tsc --project backend/tsconfig.json --noEmit",
         "typecheck": "npm run typecheck:frontend && npm run typecheck:frontend:node && npm run typecheck:backend",
         "format": "prettier --write .",
-        "format:check": "prettier --check ."
+        "format:check": "prettier --check .",
+        "lint": "oxlint frontend backend shared",
+        "lint:fix": "oxlint frontend backend shared --fix",
+        "check": "npm run typecheck && npm run lint && npm run format:check",
+        "fix": "npm run lint:fix && npm run format"
     }
 }
